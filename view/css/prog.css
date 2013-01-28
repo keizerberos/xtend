@@ -1,0 +1,73 @@
+
+.divprog111{
+	clear:both;
+	margin-top:5px;
+	width:85%;
+	overflow:hidden;
+	overflow-y:auto;
+}
+.divSetIn121{
+	border:1px solid #fff;
+    padding: 2px 3px;
+    width:auto;
+    	 
+}
+.divFocus{
+	border:1px solid #973;
+}
+
+.divSetIn121:hovser{
+	border:1px solid #96f;
+}
+
+.divSetDayServ{
+	border: 1px solid darkgray;
+	width: auto;    
+	
+}
+
+.service{
+	float:left;
+	font-weight:bold;	
+	color: #2222ff;
+    /*border: 1px solid darkgray;
+    box-shadow: 1px 1px 1px 0 lightgray inset;*/  
+    margin-top: 3px;
+    padding: 2px 0;
+}
+
+.site{
+	float:left;
+	font-weight:bold;	
+	color: #227722;
+    /*border: 1px solid darkgray;
+    box-shadow: 1px 1px 1px 0 lightgray inset;*/  
+    margin-top: 3px;
+    padding: 2px 0;
+}
+
+.typesite{
+	float:left;
+	font-weight:bold;	
+	color: #227799;
+    /*border: 1px solid darkgray;
+    box-shadow: 1px 1px 1px 0 lightgray inset;*/  
+    margin-top: 3px;
+    padding: 2px 0;
+}
+
+.step{
+	float:left;
+	font-style:italic;
+	color: #000;    
+	margin-top: 3px;
+    padding: 2px 3px;
+}
+
+.arrows{
+	float:left;
+	font-style:italic;
+	color: #000;    
+	margin-top: 3px;
+    padding: 2px 0;
+}

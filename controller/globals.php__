@@ -1,0 +1,4 @@
+<?php
+//$location_url = '';
+$location_url = 'http://localhost/xtend/model/';
+?>

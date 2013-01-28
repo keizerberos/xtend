@@ -1,0 +1,24 @@
+#clock_label123{
+	font-family:"Courier";
+	font-weight: bold;
+	font-size:18px;	
+	text-align: center;
+	width:100%;
+	display:block;
+	
+
+}
+
+#clock_123123{
+	width:100px;
+	left:50%;
+	position:absolute;
+	display:block;
+	bottom: 0px;
+	
+	
+	height:auto;
+	overflow:hidden;
+	
+	float:right;
+}

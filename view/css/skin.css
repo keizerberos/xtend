@@ -1,0 +1,19 @@
+
+#divSkin21{
+	width:auto;
+	
+	overflow:hidden;
+	position:relative;
+	display:block;
+	float:left;
+}
+
+
+#divSkin21 select{
+	font-size: 14px;
+}	
+
+#form1154{
+	display:inline-block;
+	height:auto;
+}

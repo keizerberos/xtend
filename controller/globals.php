@@ -1,0 +1,3 @@
+<?php
+$location_url = '';
+?>

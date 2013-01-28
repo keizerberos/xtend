@@ -1,0 +1,35 @@
+.divLang1113{
+	height:auto;
+	overflow:hidden;
+	position:relative;
+	display:inline-block;
+	border-width: :1px;
+}
+.divNews321{
+	display:inline-block;
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+	font-weight: bold;
+	text-align:center;
+	height:auto;
+	width:auto;
+	left:0.4%;
+	bottom:6%;
+	position:absolute;
+}
+.divLang1113:hover{
+	margin-top:auto;
+	margin-bottom:auto;
+	border:1px solid #999;
+	z-index:200;
+}
+
+.divNewsGreat{
+	clear:both;
+	position:absolute;
+	margin-top:5px;
+	width:85%;
+	height:58%;
+	float:left;
+	overflow:hidden;
+	overflow-y:auto;
+}

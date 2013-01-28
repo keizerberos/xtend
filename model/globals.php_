@@ -1,0 +1,6 @@
+<?php
+$h= 'mysql6.000webhost.com';
+$u = 'a8630803_root';
+$p = 'DSK771sn';
+$d = 'a8630803_xtend';
+?>

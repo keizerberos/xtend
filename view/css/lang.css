@@ -1,0 +1,19 @@
+
+#divLang1111{
+	width:auto;
+	
+	overflow:hidden;
+	position:relative;
+	display:block;
+	float:left;
+}
+
+
+#divLang1111 select{
+	font-size: 14px;
+}	
+
+#form111{
+	display:inline-block;
+	height:auto;
+}
