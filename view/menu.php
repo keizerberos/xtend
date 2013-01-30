@@ -44,12 +44,17 @@ height:100%;
 			<div id="tabs-1">		
 				<div id="accordion">
 					<h3>Files</h3>
-					<div class=divLang1113321>
-						<button class='dbutton214'>Cotizar</button>
-						<button class='dbutton214'>Generar Programa</button>
-						<button class='dbutton214'>Generar Itinerario</button>
-						<button class='dbutton214'>Generaraci&oacute;n de mapas</button>
-						<button class='dbutton214'>Rooming List</button>
+					<div>
+						<button class='dbutton214'>Crear Nuevo File</button>
+						<button class='dbutton214'>Explorar mis Files</button>
+						<button class='dbutton214'>Explorar Files de Agencias</button>
+						<button class='dbutton214'>Explorar Todo</button>
+						<button class='dbutton214'>B&uacute;squeda</button>
+					<!-- 	<button class='dbutton214'>Cotizar</button> -->	
+					<!--	<button class='dbutton214'>Generar Programa</button> -->	
+					<!--	<button class='dbutton214'>Generar Itinerario</button> -->	
+					<!--	<button class='dbutton214'>Generaraci&oacute;n de mapas</button> -->	
+					<!--	<button class='dbutton214'>Rooming List</button> -->	
 					</div>
 					<h3>Servicios</h3>
 					<div>
@@ -74,7 +79,7 @@ height:100%;
 			<div id="tabs-2">
 				<div id="accordion2">
 					<h3>Asignaciones</h3>
-					<div class=divLang1113321>
+					<div >
 						<button class='dbutton214'>Asignar Servicio - Proveedor</button>
 						<button class='dbutton214'>Reservar Servicio - Proveedor</button>
 						<button class='dbutton214'>OT Serv - Prov</button>
@@ -99,7 +104,7 @@ height:100%;
 			<div id="tabs-3">
 				<div id="accordion3">
 					<h3>Pagos y Provisiones</h3>
-					<div class=divLang1113321>
+					<div >
 						<button class='dbutton214'>Registrar Pagos</button>
 						<button class='dbutton214'>Auto Provisionar</button>
 						<button class='dbutton214'>Cierre de Files</button>
@@ -120,25 +125,28 @@ height:100%;
 			<div id="tabs-4">
 				<div id="accordion4">
 					<h3>Usuarios</h3>
-					<div class=divLang1113321>
+					<div >
 						<button class='dbutton214'>Gestionar</button>
 						<button class='dbutton214'>Privilegios</button>
-						
 					</div>
 					<h3>Variables</h3>
 					<div>
-						<button class='dbutton214'>Reporte de Utilidades</button>
-						<button class='dbutton214'>Descargar ND</button>
+						<button class='dbutton214' id=dButtonAA1>Strings</button>
+						<button class='dbutton214'>Big Strings</button>
+						<button class='dbutton214'>Tipo de Cambio</button>
 					</div>
 					<h3>Mapa</h3>
 					<div>
-						<button class='dbutton214'>Reporte de Utilidades</button>
-						<button class='dbutton214'>Descargar ND</button>
+						<button class='dbutton214'>Sitios</button>
+						<button class='dbutton214'>Tipo de Sitios</button>
 					</div>
 					<h3>Idiomas</h3>
 					<div>
-						<button class='dbutton214'>link - Cuentas</button>
-						<button class='dbutton214'>Prov - Link</button>
+						<button class='dbutton214'>Gestionar</button>
+					</div>
+					<h3>Monedas</h3>
+					<div>
+						<button class='dbutton214'>Gestionar</button>
 					</div>
 				</div>
 			</div>

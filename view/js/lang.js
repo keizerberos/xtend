@@ -32,7 +32,7 @@ $('#select1').change(function(){
 
 $dir = '../controller/lang.php?task=load';
 $.getJSON($dir, function(dat) {
-	console.log(dat);
+	//console.log(dat);
 	$('#select1').html('');
 	$.each(dat,function (key,val){
 		if (lan == val.id) $('#select1').append('<option value="'+val.id+'" selected>'+val.name+'</option>'); 

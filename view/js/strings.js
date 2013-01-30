@@ -27,28 +27,11 @@ $(document).ready(function() {
 	      }
 	  }).siblings('.ui-dialog-titlebar').remove();
 	loadPage("clock.php?set=0",$("#divBot"));
-	loadPage("login.php?set=0",$("#divBar"));
+	loadPage("login.php?set=0&menu=0",$("#divBar"));
 	loadPage("lang.php?set=0",$("#divBar"));
 	loadPage("cotiz.php?set=0",$("#divRight"));
 	loadPage("skin.php?set=0",$("#divBot"));
-	
-	var a331 = Tools.readCookie("us");
-	var a332 = Tools.readCookie("pa");
-	var nam = Tools.readCookie("nam");
-	Cargar();
-	$.post("../controller/login.php?task=log",{a21:a331, a12:a332},  function(responseText) {
-		Descargar();
-		if (responseText != "error"){
-			clearDiv("#divMid");
-			loadPage("menu.php?set=0",$("#divMid"));
-			//$("#divLang1112").empty();
-		}
-		else{
-			clearDiv("#divMid");
-			loadPage("news.php?set=0",$("#divMid"));
-		}
-	});	
-	
+	loadPage("stringsman.php?set=0",$("#divMid"));
 	//loadPage("news.php?set=0",$("#divMid"));
 
 //	loadPage("prog.php?set=0",$("#divMid"));
@@ -59,7 +42,7 @@ $(document).ready(function() {
 		items : ".divMov"
 	});
 	*/
-}); 
+});
 
 function loadVars() {
 	
@@ -94,14 +77,13 @@ function Cargando(){
 			isLoadStr = true;
 			$.post("../controller/vars.php?task=bstring&n="+ xStrings[xLoadStr[xLoadStr.length-1].num].n +"&l="+xLang, function(dat) {
 				//console.log(dat);
-				
+				Descargar();
+				isLoadStr = false;
+				xLoadStr.pop();
 				if (typ == 'html')	$(obj).html(dat);
 				if (typ == 'text')	$(obj).text(dat);
 				if (typ == 'val')	$(obj).val(dat);
 				if (typ == 'diag-title')	$(obj).dialog( "option", "title", dat );
-				Descargar();
-				isLoadStr = false;
-				xLoadStr.pop();
 			});
 		} 
 	}

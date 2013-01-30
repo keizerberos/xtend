@@ -5,7 +5,7 @@ if (!isset($_GET['set'])){
 <html xmlns="http://www.w3.org/1999/xhtml">﻿
 <head>
 <meta charset="utf-8">
-<title>Lenguage</title>
+<title>Lenguaje</title>
 <script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="../js/jquery-ui-1.9.2.custom.min.js"></script>
 <link type="text/css"	href="../css/ui-darkness/jquery-ui-1.9.2.custom.css" rel="Stylesheet" />

@@ -57,10 +57,10 @@ height:100%;
 }
 ?>
 <div class='ui-widget ' id='divLang1112' title="Login">
-	<div class='ui-widget-content'>
 		<form id="form112" action="post.php" method="POST">
+		
+			<fieldset>
 			<div class="grpsepar ">
-			
 				<label id="strUser">User</label><input type="text" name="inputtext" id="inpUser" class="text ui-widget-content ui-corner-all"/>
 				<label id="strPass">Password</label><input type="password" id="inpPass" class="text ui-widget-content ui-corner-all"/>
 				<label class="ui-state-error ui-state-error-text" id="strError">Usuario o clave incorrecta</label>
@@ -70,8 +70,8 @@ height:100%;
 				
 			</div>
 			<input type="button" value="Sign In" id="strButIng"/>
+			</fieldset>
 		</form>
-	</div>
 </div>
 <input type="button" value="Sign In" id="strButIng2"/>
 <input type="button" value="Sign out" id="strButIng3"/>

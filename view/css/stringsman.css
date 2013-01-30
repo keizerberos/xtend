@@ -1,0 +1,53 @@
+
+#divStringsAA1{
+	width:180px;
+	height:100%;
+	overflow:hidden;
+	position:relative;
+	display:block;
+	float:left;
+}
+
+.divStringsCC1{
+	height:96%;
+}
+
+.text324{
+	padding:2px 0px 2px 0px;
+	width:80%;
+	float:left;
+	height:20px;
+}
+
+#divStrings{
+	overflow:hidden;
+	overflow-y:scroll;
+	height:80%;
+	width:100%;
+}
+
+#divStrings table,.divHeaders table{
+	width:100%;
+	border-collapse: collapse;
+}
+#divStrings table th,#divStrings table td,.divHeaders table th{	
+	border: 1px solid #eee;
+}
+.divStringsCC1 table{
+	width:100%;
+}
+#divStrings table td{
+	cursor:pointer;
+	height:2em;
+}
+.divHeaders{
+	display:block;
+	float:left;
+}
+.stmul {margin: 0; padding: 0;
+	display:block;
+	float:left;}
+.stmli {margin: 0 2px 0 2px  ; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none; font-size:10px;}
+.stmspan.ui-icon {float: left; margin: 0 4px;}
+.stmspan.text1 {float: left; width: auto; }
+

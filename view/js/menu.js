@@ -21,3 +21,9 @@ function slideScrollbar() {
     scrollbar.update();
     scrollbar.move(Math.max(0, content.find('> p').length - 9) * 18);
 }*/
+
+$("#dButtonAA1").click(function (){
+	window.open("strings.html", "_blank");
+	//window.open("strings.html", "_blank", "toolbar=no,menubar=no,directories=no,status=no,resizable=no,location=no,scrollbars=no");
+});
+

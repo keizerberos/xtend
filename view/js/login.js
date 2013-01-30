@@ -11,12 +11,14 @@ addString('#strButIng2','val','strButIng');
 addString('#strButIng3','val','strButOut');
 addString('#divLang1112','diag-title','strLogin');
 addString('#strRemPas','html','strRemPas');
+
 var rem = Tools.readCookie("rem");
 $("#strButIng3").hide();
 $("#strButIng4").hide();
 $("#strButIng2").show();
 
-console.log(rem);
+//console.log(rem);
+
 	var a331 = Tools.readCookie("us");
 	var a332 = Tools.readCookie("pa");
 	var nam = Tools.readCookie("nam");
@@ -24,18 +26,16 @@ console.log(rem);
 	$.post("../controller/login.php?task=log",{a21:a331, a12:a332},  function(responseText) {
 		Descargar();
 		if (responseText != "error"){
-			console.log("login Correcto");
 			$("#strButIng2").hide();
 			$("#strButIng3").show();
 			$("#strButIng4").show();
 			$("#strButIng4").val(nam);
-			clearDiv("#divMid");
-			loadPage("menu.php?set=0",$("#divMid"));
-			//$("#divLang1112").empty();
+	//		clearDiv("#divMid");
+	//		loadPage("menu.php?set=0",$("#divMid"));
 		}
 		else{
-			clearDiv("#divMid");
-			loadPage("news.php?set=0",$("#divMid"));
+	//		clearDiv("#divMid");
+	//		loadPage("news.php?set=0",$("#divMid"));
 		}
 	});	
 
@@ -143,7 +143,7 @@ $("#divLang1112").dialog({
   draggable: false,
   resizable: false,
   close: function(event, ui) {
-      $(this).hide();
+      $(this).hide(); 
       }
   
   });

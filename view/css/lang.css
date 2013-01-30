@@ -1,7 +1,6 @@
 
 #divLang1111{
 	width:auto;
-	
 	overflow:hidden;
 	position:relative;
 	display:block;
@@ -10,7 +9,7 @@
 
 
 #divLang1111 select{
-	font-size: 14px;
+	font-size: 10px;
 }	
 
 #form111{
