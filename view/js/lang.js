@@ -1,4 +1,4 @@
-
+Cargar();
 //$("#divLang1111").draggable({containment: $("#divLang1111").parent()});
 $("#divLang1111").button();
 /*
@@ -41,5 +41,5 @@ $.getJSON($dir, function(dat) {
 	setLang();  
 });
 
-
+Descargar();
 setLang();

@@ -1,4 +1,4 @@
-
+Cargar();
 $("#divcotiz123").draggable({containment: $("#divcotiz123").parent()});
 //$("#divcotiz123").draggable({containment: $("#divcotiz123").parent(),axis:'x'});
 
@@ -15,4 +15,5 @@ addString('#strCompra','html','strCompra');
 addString('#strVenta','html','strVenta');
 
 
+Descargar();
 setLang();

@@ -1,4 +1,4 @@
-
+Cargar();
 $("#divSkin21").button();
 addString('#strSkin','html','strSkin');
 var  skn = Tools.readCookie("skn");
@@ -11,3 +11,4 @@ $('#select654').change(function(){
 		 
 		});
 });
+Descargar();

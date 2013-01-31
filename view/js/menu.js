@@ -1,4 +1,4 @@
-
+Cargar();
 //$(".divLang1113").draggable({containment: $(".divLang1113").parent()});
 //$(".divLang1113").draggable({containment: $(".divLang1113").parent()});
 //$(".divLang1113").draggable({containment: $(".divLang1113").parent()});
@@ -27,3 +27,4 @@ $("#dButtonAA1").click(function (){
 	//window.open("strings.html", "_blank", "toolbar=no,menubar=no,directories=no,status=no,resizable=no,location=no,scrollbars=no");
 });
 
+Descargar();

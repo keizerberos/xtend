@@ -1,4 +1,4 @@
-
+Cargar();
 //$(".divLang1113").draggable({containment: $(".divLang1113").parent()});
 //$(".divLang1113").draggable({containment: $(".divLang1113").parent()});
 //$(".divLang1113").draggable({containment: $(".divLang1113").parent()});
@@ -37,5 +37,7 @@ $('#divNews223').click(function () {
 $('#divNews543').hide();
 $('#divNews544').show();
 $('#divNews545').hide();
+Descargar();
 setLang();
+
 });

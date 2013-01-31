@@ -61,8 +61,8 @@ height:100%;
 		
 			<fieldset>
 			<div class="grpsepar ">
-				<label id="strUser">User</label><input type="text" name="inputtext" id="inpUser" class="text ui-widget-content ui-corner-all"/>
-				<label id="strPass">Password</label><input type="password" id="inpPass" class="text ui-widget-content ui-corner-all"/>
+				<label id="strUser">User</label><input type="text" name="inputtext" id="inpUser" class="text ui-widget-content ui-state-default ui-corner-all"/>
+				<label id="strPass">Password</label><input type="password" id="inpPass" class="text ui-widget-content  ui-state-default ui-corner-all"/>
 				<label class="ui-state-error ui-state-error-text" id="strError">Usuario o clave incorrecta</label>
 			</div>
 			<div id="radio">

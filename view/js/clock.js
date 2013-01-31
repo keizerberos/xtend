@@ -1,4 +1,4 @@
-
+Cargar();
 //$("#clock_123123").draggable({containment: $("#clock_123123").parent()});
 var w231 = 	$("#clock_label123").width();
 var of12= $("#clock_label123").offset();
@@ -28,5 +28,5 @@ function pad(number, length) {
     return str;
 
 }
-
+Descargar();
 setInterval(myClock,1000);

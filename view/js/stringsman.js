@@ -1,4 +1,6 @@
 //$('#strBuscar').button();
+
+Cargar();
 $('#btnCreateString').button();
 
 
@@ -6,18 +8,14 @@ $('#btnCreateString').button();
 	
 	$('#tabBodyA1 tr').hover(
 	function () {
-		$(this).addClass('ui-state-focus');
+		$(this).addClass('ui-state-focus ');
 	},
 	function () {
 		$(this).removeClass('ui-state-focus');
 	}
 	);
 	
-$('.ui-state-default').hover(
-	function(){ $(this).addClass('ui-state-hover'); }, 
-	function(){ $(this).removeClass('ui-state-hover');}
-);
-
+	
 //	var w21 = $('#tabBodyA1 td:first').width();
 
 //	var w22 = $('#tabBodyA1 td:last').width();
@@ -97,7 +95,52 @@ $('.ui-state-default').hover(
 			allFields.val("").removeClass("ui-state-error");
 		}
 	});
-	
+	$('#scrollbar1').tinyscrollbar();	
+	$('.ui-state-default').hover(
+			function(){ $(this).addClass('ui-state-hover'); }, 
+			function(){ $(this).removeClass('ui-state-hover');}
+		);
+		
+		$('.ui-state-default').focus(
+				function(){ $(this).addClass('ui-state-focus');}
+			);
+		$('.ui-state-default').blur(			
+				function(){ $(this).removeClass('ui-state-focus');}
+			);
+	Descargar();
+var dbStrings = [];
+LoadStrings("#tabBodyA1");
 function LoadStrings(obj){
-	
+	Cargar();
+	$dir = '../controller/strings.php?task=load';
+	$.getJSON($dir, function(dat) {
+			dbStrings = dat;
+			
+			$.each(dat,function (key,item){
+				console.log(item);
+				var x6543 = $('<tr><td>'+item['id']+'</td><td>'+item['nam']+'</td></tr>');
+				
+				x6543.addClass('ui-priority-secondary');
+				x6543.hover(
+						function () {
+							$(this).addClass('ui-state-focus');
+							$(this).removeClass('ui-priority-secondary');
+						},
+						function () {
+							$(this).removeClass('ui-state-focus');
+							$(this).addClass('ui-priority-secondary');
+						}
+						);
+				x6543.click(function (){
+					var a1 = $('#fieldA1 input');
+					$(a1[0]).val(item[1]);
+					$(a1[1]).val(item[2]);
+					$(a1[2]).val(item[3]);
+						}
+				);
+				x6543.appendTo(obj);
+			});
+			
+			Descargar();
+		});	
 }

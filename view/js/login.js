@@ -1,4 +1,4 @@
-
+Cargar();
 //$("#divLang1112").draggable({containment: $("#divLang1112").parent()});
 
 //$("#divLang1112").dialog();
@@ -11,6 +11,20 @@ addString('#strButIng2','val','strButIng');
 addString('#strButIng3','val','strButOut');
 addString('#divLang1112','diag-title','strLogin');
 addString('#strRemPas','html','strRemPas');
+
+
+
+$('.ui-state-default').hover(
+		function(){ $(this).addClass('ui-state-hover'); }, 
+		function(){ $(this).removeClass('ui-state-hover');}
+	);
+	
+	$('.ui-state-default').focus(
+			function(){ $(this).addClass('ui-state-focus'); }
+		);
+	$('.ui-state-default').blur(			
+			function(){ $(this).removeClass('ui-state-focus'); }
+		);
 
 var rem = Tools.readCookie("rem");
 $("#strButIng3").hide();
@@ -148,5 +162,5 @@ $("#divLang1112").dialog({
   
   });
 
-
+Descargar();
 //$('#form112').jqTransform({imgPath:'jqtransformplugin/img/'});

@@ -31,10 +31,26 @@ $(document).ready(function() {
 	loadPage("lang.php?set=0",$("#divBar"));
 	loadPage("cotiz.php?set=0",$("#divRight"));
 	loadPage("skin.php?set=0",$("#divBot"));
-	loadPage("stringsman.php?set=0",$("#divMid"));
-	//loadPage("news.php?set=0",$("#divMid"));
+	
 
-//	loadPage("prog.php?set=0",$("#divMid"));
+	var a331 = Tools.readCookie("us");
+	var a332 = Tools.readCookie("pa");
+	var nam = Tools.readCookie("nam");
+	Cargar();
+	$.post("../controller/login.php?task=log",{a21:a331, a12:a332},  function(responseText) {
+		Descargar();
+		if (responseText != "error"){
+			clearDiv("#divMid");
+			loadPage("stringsman.php?set=0",$("#divMid"));
+			//$("#divLang1112").empty();
+		}
+		else{
+			clearDiv("#divMid");
+			 window.location = '../view';
+		}
+	});	
+	
+	
 	addString('title','html','strMain');
 	/*addString('#strLoad','html','strLoad');
 	$('.divMov').sortable({

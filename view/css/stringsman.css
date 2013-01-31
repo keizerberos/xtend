@@ -8,22 +8,41 @@
 	float:left;
 }
 
-.divStringsCC1{
-	height:96%;
+
+#divStringsBB1{
+	height:100%;
+	overflow:hidden;
+	
 }
+
+.divStringsCC1{
+	height:100%;
+}
+
+
 
 .text324{
 	padding:2px 0px 2px 0px;
-	width:80%;
+	width:114px;
 	float:left;
+	height:20px;
+}
+
+.textMan{
+	padding:2px 0px 2px 0px;
+	width:100%;
+	margin:5px auto 5px auto ;
+	
 	height:20px;
 }
 
 #divStrings{
 	overflow:hidden;
 	overflow-y:scroll;
+	position:relative;
 	height:80%;
 	width:100%;
+	float:left;
 }
 
 #divStrings table,.divHeaders table{
@@ -45,9 +64,8 @@
 	float:left;
 }
 .stmul {margin: 0; padding: 0;
-	display:block;
-	float:left;}
-.stmli {margin: 0 2px 0 2px  ; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none; font-size:10px;}
+	display:inline-block;
+	/*float:left;*/}
+.stmli { margin: 0 2px 0 2px  ; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none; font-size:10px;}
 .stmspan.ui-icon {float: left; margin: 0 4px;}
 .stmspan.text1 {float: left; width: auto; }
-
